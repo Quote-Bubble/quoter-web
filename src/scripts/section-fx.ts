@@ -55,16 +55,6 @@ export function initSectionFx(): () => void {
         el.style.translate = `0 ${(inv * 110).toFixed(1)}px`;
         el.style.rotate = `x ${(inv * 28).toFixed(2)}deg`;
         break;
-      // Section heading: RISES straight up out of the fold and settles.
-      // Purely vertical — no cant, no sideways drift. A heading that sweeps in
-      // from the side drags the eye off the first word it is meant to land on;
-      // reading starts at the left edge, so the entrance must not move through
-      // it. Nothing else on the page moves on this axis alone.
-      case "rise":
-        el.style.translate = `0 ${(inv * 96).toFixed(1)}px`;
-        el.style.rotate = "0deg";
-        el.style.scale = (0.94 + 0.06 * p).toFixed(4);
-        break;
       // Footer wordmark: PUNCHES in from tiny to full, straight zoom, no tilt.
       // Ends exactly at the designed size (scale 1) so it never clips.
       case "punch":
