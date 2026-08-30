@@ -259,7 +259,7 @@ const ogImage = new URL("/og-image.jpg", Astro.site).href;
 
 <script>
   /**
-   * Mobile only: pin the hero blob behind the search + Book a call cluster.
+   * Mobile only: pin the hero blob behind the search + WhatsApp CTA cluster.
    * Hide until the first measure, then bloom from the correct place so the
    * user never sees a default→shift jump.
    */
@@ -276,7 +276,7 @@ const ogImage = new URL("/og-image.jpg", Astro.site).href;
       const widget = document.querySelector<HTMLElement>("[data-widget-shell]");
       if (!widget) return null;
       // Centre the glow on the widget. (This used to average the widget with
-      // the hero's "Book a call" slab; that button is a quiet link above the
+      // the hero's WhatsApp slab; that button is a quiet link above the
       // demo now, so it's no longer part of the cluster to sit behind.)
       const w = widget.getBoundingClientRect();
       return Math.round(w.top + w.height * 0.55 - NATURAL_BAND_MID);

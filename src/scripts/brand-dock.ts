@@ -290,7 +290,7 @@ export function initBrandDock() {
   }
 
   // The docked wordmark is a fixed element resting on the transparent brand
-  // slot. When the nav pill lengthens (Book a call revealed) the slot shifts,
+  // slot. When the nav pill lengthens (the CTA revealed) the slot shifts,
   // so expose a re-measure so that animation can keep the wordmark on its slot.
   const brandSync = () => {
     if (!ready) return;

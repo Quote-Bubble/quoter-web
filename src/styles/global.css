@@ -636,7 +636,7 @@ input {
 }
 
 /* NOTE: there used to be `belpa-suggesting` / `belpa-flow-open` rules here
-   hiding "Book a call", because it sat directly under the widget and the
+   hiding the CTA, because it sat directly under the widget and the
    iframe's suggestion dropdown and expanded panel overlay downward onto it.
    In the split hero it is never beneath the widget — it's a quiet link in the
    left column (and above the demo once the grid stacks on mobile) — so there
