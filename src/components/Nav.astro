@@ -6,11 +6,13 @@
    leads with on every lead, so the two halves of the product agree.
 
    wa.me wants the number in international form with no plus, no spaces and no
-   leading zero: 07405043602 becomes 447405043602. The prefilled text saves the
-   "what do I even say" pause and marks the enquiry as coming from the site. */
+   leading zero: 07405043602 becomes 447405043602.
+
+   No ?text= prefill: it puts words in the sender's mouth, and a message that
+   arrives reading like a template tells you less about what someone actually
+   wants than one they wrote themselves. */
 const whatsappNumber = "447405043602";
-const whatsappMessage = "Hi Belpa, I saw your site and I'd like to know more.";
-const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+const whatsappUrl = `https://wa.me/${whatsappNumber}`;
 // Roofer login. Points at the dashboard root, which auto-routes: logged-out to
 // /login, logged-in straight to /quotes. Env-overridable like the embed origin.
 const dashboardUrl =
